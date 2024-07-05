@@ -2,6 +2,7 @@ let arr = require('../data')
 const Todo = require('../models/todo')
 
 // CRUD
+// cons resp = []
 async function getTodos(req, res) {
     console.log("I am in get Todos")
     const resp = await Todo.find()
