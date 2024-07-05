@@ -4,8 +4,8 @@
   "description": "",
   "main": "backend/index.js",
   "scripts": {
-    "start": "nodemon index",
-    "dev": "concurrently \"npm start\" \"cd frontend & npm start\"",
+    "start": "node index",
+    "dev": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
