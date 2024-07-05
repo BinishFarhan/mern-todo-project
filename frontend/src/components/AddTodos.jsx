@@ -20,7 +20,7 @@ const AddTodos = () => {
                     title,
                     desc
                 }
-                const resp = await axios.post("http://localhost:5000/todo/add", data)
+                const resp = await axios.post("https://todoapp-mern.vercel.app/todo/add", data)
                 const handleToastClose = () => {
                     setTodo([...todos, resp.data.res])
                 }

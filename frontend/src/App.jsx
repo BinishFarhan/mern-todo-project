@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/todo/");
+        const response = await axios.get("https://todoapp-mern.vercel.app/todo/");
         setTodo(response.data.data);
         // console.log("🚀 ~ fetchData ~ response:", response.data.data)
       } catch (error) {

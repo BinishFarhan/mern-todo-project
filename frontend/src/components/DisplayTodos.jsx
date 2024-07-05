@@ -59,7 +59,7 @@ const DisplayTodos = () => {
     function handleDelete(_id, i) {
         // console.log(_id, i)
         try {
-            const res = axios.post("http://localhost:5000/todo/delete", { _id: _id })
+            const res = axios.post("https://todoapp-mern.vercel.app/todo/delete", { _id: _id })
             // console.log("🚀 ~ handleDelete ~ res:", res)
             setTodo(todos.filter((item) => item._id !== _id))
 
@@ -74,7 +74,7 @@ const DisplayTodos = () => {
 
     };
     const handleAlldelete = () => {
-        const res = axios.post("http://localhost:5000/todo/deleteAll");  // Send DELETE request
+        const res = axios.post("https://todoapp-mern.vercel.app/todo/deleteAll");  // Send DELETE request
         setTodo([]);  // Update state to reflect empty todo list
         setConfirmationDel(false)
     }

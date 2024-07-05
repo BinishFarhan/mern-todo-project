@@ -15,7 +15,7 @@ const EditModal = ({ item, close }) => {
     function handleUpdate(id) {
 
         try {
-            const res = axios.post("http://localhost:5000/todo/", { _id: id, isEdit: false, title: updateTitle, desc: updateDesc })
+            const res = axios.post("https://todoapp-mern.vercel.app/todo/", { _id: id, isEdit: false, title: updateTitle, desc: updateDesc })
             // console.log("🚀 ~ handleUpdate ~ res:", res)
             setTodo(todos.map((todo) => (todo._id === id ? { ...todo, isEdit: false, title: updateTitle, desc: updateDesc } : todo)))
             close()
