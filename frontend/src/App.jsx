@@ -14,7 +14,7 @@ function App() {
       try {
         const response = await axios.get("https://todoapp-mern.vercel.app/todo/");
         setTodo(response.data.data);
-        // console.log("🚀 ~ fetchData ~ response:", response.data.data)
+        console.log("🚀 ~ fetchData ~ response:", response.data.data)
       } catch (error) {
         console.error("Error fetching data:", error);
       }
